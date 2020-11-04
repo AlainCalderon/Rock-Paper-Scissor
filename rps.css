@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+main{
+    width:100vw;
+    height:100vh;
+    background: url('rockpaperscissors.jpg') center no-repeat;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Syne Tactile', cursive;
+}
+
+.score-board{
+    width:50%;
+    height:20%;
+    display:flex;
+}
+.left-aside{
+    width:50%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    color:white;
+}
+
+.right-aside{
+    color:white;
+    width:50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.button-place{
+    width:50%;
+    height:50%;
+    background-color: dimgray transparent;
+    display:flex;   
+    flex-direction: column;
+}
+
+.btn-style{
+    font-family: 'Syne Tactile', cursive;
+    font-size: 1.5rem;
+    width:10%;
+    height:auto;
+    border-radius:50%;
+    background-color:rgb(150, 142, 142);
+    margin:2.5rem;
+    outline: none;
+}
+.btn-style:active{
+    text-decoration:none;
+    
+}
+button[data-hand="rock"]{
+    align-self: center;
+}
+button[data-hand="scissor"]{
+    align-self: center;
+}
+button[data-hand="paper"]{
+    align-self:center;
+}
+
